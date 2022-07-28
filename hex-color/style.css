@@ -10,12 +10,21 @@ button {
     border: none !important;
 }
 
-.color {
+.container {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 5px;
+    font-size: 4rem;
+    font-style: italic;
+    animation: changeColor 5s infinite alternate;
 }
 
 .text {
@@ -29,8 +38,30 @@ button {
     color: #fff;
 }
 
-.text .hex {
+.hex {
     margin: 5px;
     font-size: 24px;
-    color: rgb(164, 164, 164);
+    color: rgb(216, 216, 216);
+    animation: changeColor 5s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: brown;
+    }
+    80% {
+        color: indigo;
+    }
+    100% {
+        color: blue;
+    }
 }
