@@ -27,25 +27,36 @@ h4 {
     align-items: center;
 }
 
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 #box {
-    font-family: "Marck Script", cursive;
     font-family: "PT Mono", monospace;
     font-weight: bold;
     background-color: #84a98c;
     color: #314855;
+    border-radius: 10px;
+    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.4);
+
+    max-width: 600px;
+    min-height: 200px;
+    padding: 10px 20px;
+
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
+    justify-content: flex-end;
     text-align: center;
-    box-shadow: 3.2px 6.4px 6.4px hsl(0deg 0% 0% / 0.4);
 }
 
 #box #author {
     font-family: "Marck Script", cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: end;
-    margin: 15px 0px;
+    margin-top: 10px;
 }
 
 #button-next {

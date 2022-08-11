@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>image carousel</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Слайдер изображений</h1>
+            <div class="slider-box">
+                <div class="slider-img-container fade">
+                    <img src="img/1.jpg" alt="img">
+                </div>
+                <div class="slider-img-container fade">
+                    <img src="img/2.jpg" alt="img">
+                </div>
+                <div class="slider-img-container fade">
+                    <img src="img/3.jpg" alt="img">
+                </div>
+                <div class="slider-img-container fade">
+                    <img src="img/4.jpg" alt="img">
+                </div>
+                <div class="slider-img-container fade">
+                    <img src="img/5.jpg" alt="img">
+                </div>
+                <i id="slider-button-prev" onclick="show_image(-1)" class="fa-solid fa-chevron-left slider-button"></i>
+                <i id="slider-button-next" onclick="show_image(1)" class="fa-solid fa-chevron-right slider-button"></i>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/3c84bd2ca4.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
