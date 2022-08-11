@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+.gradient {
+    background: linear-gradient(90deg, #179071, #d53f3f, #50cec9);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    -o-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 51%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 51%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-o-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 51%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 51%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 3px solid gray;
+    border-radius: 15px;
+}
+
+.clock {
+    width: 55%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(150, 150, 150, 0.4);
+}
+
+.clock span {
+    font-family: "PT Mono", monospace;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 5em;
+    animation: fadeIn 2.5s ease-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.1 }
+    100% { opacity: 1 }
+}
