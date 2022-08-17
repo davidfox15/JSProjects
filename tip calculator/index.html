@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Калькулятор чаевых</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h1>Калькулятор чаевых</h1>
+        <div class="line">
+          <span class="line__icon">👤</span>
+          <input
+            id="persons"
+            class="line__input line__input_text"
+            type="text"
+            size="40"
+          />
+        </div>
+        <div class="line">
+          <span class="line__icon">💰</span>
+          <input
+            id="money"
+            class="line__input line__input_text"
+            type="text"
+            size="40"
+          />
+        </div>
+        <div class="line">
+          <spann class="line__icon">🍪</spann>
+          <select
+            id="quality-select"
+            class="line__input line__input_text"
+            name="quality"
+            id="quality-select"
+          >
+            <option value="">-- Выберите качество обслуживания --</option>
+            <option value="amazing">Amazing</option>
+            <option value="greate">Great</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="bad">Bad</option>
+          </select>
+        </div>
+        <div class="line">
+          <button id="сount-button" type="button" class="line__input">
+            Посчитать
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
