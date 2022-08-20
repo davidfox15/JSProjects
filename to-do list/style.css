@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+}
+
+header {
+  margin: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  color: white;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 30px;
+}
+
+.taskInput {
+  font-weight: bold;
+  border: none;
+  background-color: #f2f2f250;
+  appearance: none;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.taskInput::placeholder {
+  color:    rgba(255, 255, 255, 0.8);
+}
+
+.taskInput:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+}
+
+#input {
+  border-radius: 5px;
+}
+
+.taskButton {
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  background-color: #f2f2f250;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.taskButton:hover {
+  cursor: pointer;
+  background-color:#ffffffaa;
+}
+
+.taskButton:active {
+  border-color: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.list__item {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #f2f2f250;
+  min-width: 30%;
+  font-weight: bold;
+}
+
+ .list__item span {
+  flex-grow: 2;
+  text-align: center;
+ }
+
+ .list__deleteButton {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f250;
+  border: none;
+  border: none;
+  outline: none;
+ }
+
+ .list__deleteButton:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ff000080;
+ }
