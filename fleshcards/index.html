@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Карточки</title>
+  </head>
+  <body>
+    <header>
+      <h1>Карточки</h1>
+      <div class="buttonGroup">
+        <button id="createButton" class="stdButton">Создать</button>
+        <button id="allDeleteButton" class="stdButton">Удалить</button>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card card_form">
+        <span>Вопрос</span>
+        <input id="question" type="text" class="card_form__input" />
+        <span>Ответ</span>
+        <input id="answer" type="text" class="card_form__input" />
+        <button id="addButton" class="stdButton">Добавить</button>
+        <button id="closeButton" class="stdButton">Закрыть</button>
+      </div>
+    </div>
+    <div class="ListOfCards">
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
