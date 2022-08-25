@@ -87,5 +87,44 @@ header {
 }
 
 .answer_option__true {
-  background-color: yellow;
+  /* background-color: yellow; */
+}
+
+@media (max-width: 450px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu__mode {
+    font-size: 15px;
+  }
+
+  .container {
+    margin: 10px 0px;
+    flex-direction: column;
+  }
+
+  .canvas {
+    font-size: 90px;
+    height: 150px;
+  }
+
+  .answer {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .answer__option {
+    width: 100%;
+  }
 }
