@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+  background-color: #e6e6ea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #ff8a5b;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu__mode {
+  font-size: 20px;
+  list-style: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.menu__mode_chosen {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.container {
+  margin: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.canvas {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  flex-grow: 1;
+  font-size: 130px;
+  font-family: "Luckiest Guy", cursive;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.answer__option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #ea526f;
+  width: 400px;
+  font-size: 60px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.answer_option__true {
+  background-color: yellow;
+}
