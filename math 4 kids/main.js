@@ -43,7 +43,7 @@ const generateExpression = () => {
     case "multiply":
       expression = genExpressionMultiply();
       break;
-    case "devide":
+    case "divide":
       expression = genExpressionDevide();
       break;
     default:
@@ -63,11 +63,12 @@ const randomInt = (number) => {
 
 // Генерирует варианты оветов
 const сreateAnswerOptions = (expression) => {
-  const answer = eval(expression);
+  const answer = +eval(expression).toFixed(2);
   let array = [answer];
   while (array.length < 3) {
     let rnd = randomInt(answer);
-    if (!array.includes(rnd)) array.push(rnd);
+    if (array.includes(rnd)) continue;
+    array.push(rnd);
   }
   array.sort(() => Math.random() - 0.5);
   return array;
@@ -79,7 +80,7 @@ const updateExpression = (array, expression) => {
   for (let i = 0; i < 3; i++) {
     answers[i].classList.remove("answer_option__true");
     answers[i].innerHTML = array[i];
-    if (array[i] === eval(expression))
+    if (array[i] === +eval(expression).toFixed(2))
       answers[i].classList.add("answer_option__true");
   }
 };
@@ -100,10 +101,17 @@ const genExpressionSubtract = () => {
 
 // Возвращает выражение умножения
 const genExpressionMultiply = () => {
-  console.log("multiply");
+  let expression =
+    Math.floor(Math.random() * 11) + " * " + Math.floor(Math.random() * 11);
+  return expression;
 };
 
 // Возвращает выражение деления
 const genExpressionDevide = () => {
-  console.log("devide");
+  let expression =
+    Math.floor(Math.random() * 100) +
+    1 +
+    " / " +
+    (Math.floor(Math.random() * 10) + 1);
+  return expression;
 };

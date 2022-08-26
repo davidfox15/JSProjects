@@ -90,6 +90,20 @@ header {
   /* background-color: yellow; */
 }
 
+@media (max-width: 800px) {
+  .canvas {
+    max-width: 70%;
+  }
+
+  .answer {
+    width: 30%;
+  }
+
+  .answer__option {
+    width: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   header {
     padding: 10px;
@@ -102,6 +116,7 @@ header {
     flex-direction: column;
     gap: 5px;
   }
+  
   .menu__mode {
     font-size: 15px;
   }
